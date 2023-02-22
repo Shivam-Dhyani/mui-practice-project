@@ -1,7 +1,7 @@
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Feed from "./components/Feed";
-import Rightbar from "./components/Rightbar";
+import Navbar from "./components/navbar/Navbar";
+import Sidebar from "./components/sidebar/Sidebar";
+import Feed from "./components/feed/Feed";
+import Rightbar from "./components/rightbar/Rightbar";
 import { Box, Stack } from "@mui/material";
 
 const App = () => {

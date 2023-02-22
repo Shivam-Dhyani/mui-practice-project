@@ -1,12 +1,13 @@
 import {
   AppBar,
+  Autocomplete,
   Avatar,
   Badge,
   Box,
-  InputBase,
   Menu,
   MenuItem,
   styled,
+  TextField,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -14,8 +15,9 @@ import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SearchIcon from "@mui/icons-material/Search";
-import { theme } from "../theme";
+import { theme } from "../../theme";
 import { useState } from "react";
+import "./Navbar.css";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -25,7 +27,7 @@ const StyledToolbar = styled(Toolbar)({
 const Search = styled("div")({
   backgroundColor: "white",
   color: "black",
-  padding: "5px 10px",
+  padding: "0px 0px",
   width: "40%",
   borderRadius: theme.shape.borderRadius,
   display: "flex",
@@ -53,6 +55,15 @@ const UserBox = styled(Box)({
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const goal = [
+    { label: "ITTS" },
+    { label: "as" },
+    { label: "SDE" },
+    { label: "by" },
+    { label: "June" },
+    { label: "2023" },
+  ];
+
   return (
     <AppBar position="sticky">
       <StyledToolbar>
@@ -65,7 +76,18 @@ const Navbar = () => {
         />
         <Search>
           <SearchIcon fontSize="large" color="disabled" />
-          <InputBase style={{ width: "94%" }} />
+          {/* <InputBase style={{ width: "94%" }}> */}
+          <Autocomplete
+            className="text"
+            style={{
+              width: "92%",
+            }}
+            options={goal}
+            renderInput={(params) => (
+              <TextField className="textfield" {...params} style={{}} />
+            )}
+          />
+          {/* </InputBase> */}
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">

@@ -1,0 +1,17 @@
+.text fieldset {
+  border: none;
+}
+
+.text .MuiInputBase-root {
+  padding-top: 50px;
+  /* padding-bottom: 5px; */
+  /* color: aqua; */
+}
+
+.text .MuiSvgIcon-root {
+  display: none;
+}
+
+/* .text .MuiAutocomplete-popper {
+  background-color: black;
+} */
