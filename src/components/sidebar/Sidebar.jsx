@@ -4,20 +4,23 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
+  Switch,
 } from "@mui/material";
+import {
+  Home,
+  Settings,
+  Person,
+  Portrait,
+  AccountBox,
+  Storefront,
+  Group,
+  ModeNight,
+} from "@mui/icons-material";
 import ListItemIcon from "@mui/material/ListItemIcon";
-import InboxIcon from "@mui/icons-material/Inbox";
-import { Home } from "@mui/icons-material";
 
 const Sidebar = () => {
   return (
-    <Box
-      bgcolor="lightblue"
-      flex={1}
-      p={2}
-      sx={{ display: { xs: "none", sm: "block" } }}
-    >
-      {/* Sidebar */}
+    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <List>
         <ListItem disablePadding>
           <ListItemButton>
@@ -25,6 +28,62 @@ const Sidebar = () => {
               <Home />
             </ListItemIcon>
             <ListItemText primary="Homepage" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <AccountBox />
+            </ListItemIcon>
+            <ListItemText primary="Pages" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <Group />
+            </ListItemIcon>
+            <ListItemText primary="Groups" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <Storefront />
+            </ListItemIcon>
+            <ListItemText primary="Marketplace" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <Person />
+            </ListItemIcon>
+            <ListItemText primary="Friends" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <Settings />
+            </ListItemIcon>
+            <ListItemText primary="Settings" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <Portrait />
+            </ListItemIcon>
+            <ListItemText primary="Profile" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <ModeNight />
+            </ListItemIcon>
+            <Switch />
           </ListItemButton>
         </ListItem>
       </List>

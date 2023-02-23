@@ -2,9 +2,8 @@
   border: none;
 }
 
-.text .MuiInputBase-root {
-  padding-top: 50px;
-  /* padding-bottom: 5px; */
+.MuiInputBase-root {
+  padding: 10px;
   /* color: aqua; */
 }
 
