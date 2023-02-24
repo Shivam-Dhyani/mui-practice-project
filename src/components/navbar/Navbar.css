@@ -2,15 +2,11 @@
   border: none;
 }
 
-.MuiInputBase-root {
-  padding: 10px;
+.text .textfield .MuiOutlinedInput-root {
+  padding: 0;
   /* color: aqua; */
 }
 
 .text .MuiSvgIcon-root {
   display: none;
 }
-
-/* .text .MuiAutocomplete-popper {
-  background-color: black;
-} */

@@ -27,7 +27,6 @@ const StyledToolbar = styled(Toolbar)({
 const Search = styled("div")({
   backgroundColor: "white",
   color: "black",
-  padding: "0px 0px",
   width: "40%",
   borderRadius: theme.shape.borderRadius,
   display: "flex",
@@ -39,7 +38,7 @@ const Icons = styled(Box)({
   display: "none",
   gap: "30px",
   alignItems: "center",
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.up("md")]: {
     display: "flex",
   },
 });
@@ -48,7 +47,7 @@ const UserBox = styled(Box)({
   display: "none",
   gap: "10px",
   alignItems: "center",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     display: "flex",
   },
 });
@@ -67,11 +66,11 @@ const Navbar = () => {
   return (
     <AppBar position="sticky">
       <StyledToolbar>
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
+        <Typography variant="h6" sx={{ display: { xs: "none", md: "block" } }}>
           Social Media App
         </Typography>
         <Diversity3Icon
-          sx={{ display: { xs: "block", sm: "none" } }}
+          sx={{ display: { xs: "block", md: "none" } }}
           style={{ transform: "scale(1.5)" }}
         />
         <Search>
@@ -97,12 +96,16 @@ const Navbar = () => {
             <NotificationsIcon />
           </Badge>
           <Avatar
-            sx={{ width: "30px", height: "30px" }}
+            sx={{ width: "40px", height: "40px" }}
             onClick={() => setIsOpen(true)}
+            src="https://mui.com/static/images/avatar/6.jpg"
           />
         </Icons>
         <UserBox onClick={() => setIsOpen(true)}>
-          <Avatar sx={{ width: "30px", height: "30px" }} />
+          <Avatar
+            sx={{ width: "40px", height: "40px" }}
+            src="https://mui.com/static/images/avatar/6.jpg"
+          />
           <Typography>John</Typography>
         </UserBox>
         <Menu
