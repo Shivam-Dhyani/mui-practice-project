@@ -46,7 +46,7 @@ const AddPost = () => {
         sx={{
           position: "fixed",
           bottom: 20,
-          left: { xs: "calc(50% - 45px)", md: 20 },
+          left: { xs: "calc(50% - 45px)", sm: 20 },
         }}
       >
         <IconButton>
@@ -61,7 +61,14 @@ const AddPost = () => {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Box width={400} height={280} bgcolor="white" p={3} borderRadius={5}>
+        <Box
+          width={400}
+          height={280}
+          bgcolor="background.default"
+          color="text.primary"
+          p={3}
+          borderRadius={5}
+        >
           <Typography variant="h6" color="grey" textAlign="center">
             Create Post
           </Typography>
