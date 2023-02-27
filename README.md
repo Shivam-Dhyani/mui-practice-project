@@ -2,9 +2,10 @@
 
 # Project UI
 
-![image](https://user-images.githubusercontent.com/69079491/221456612-02c5b08a-a5ce-4542-9f05-50252c1deb2f.png)
+![image](https://user-images.githubusercontent.com/69079491/221456825-7afd3ea3-10ee-46e5-ac6a-35b0951a5873.png)
 
-![image](https://user-images.githubusercontent.com/69079491/221456668-c4fb569c-99f9-4e0c-830d-8f39cec7b6da.png)
+![image](https://user-images.githubusercontent.com/69079491/221456861-4ab1c3e9-9c11-4448-89d5-77e90ee688b2.png)
+
 
 
 # Getting Started with Create React App
