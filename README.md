@@ -1,5 +1,12 @@
 # Project Live Link -> [Social Media App](https://shivam-dhyani-social-media-app.netlify.app/) 
 
+# Project UI
+
+![image](https://user-images.githubusercontent.com/69079491/221456612-02c5b08a-a5ce-4542-9f05-50252c1deb2f.png)
+
+![image](https://user-images.githubusercontent.com/69079491/221456668-c4fb569c-99f9-4e0c-830d-8f39cec7b6da.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
